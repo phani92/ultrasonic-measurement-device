@@ -17,7 +17,7 @@ As the distance to an object is determined by measuring the time of flight and n
 
 Even thin deposits on the sensor membrane do not impair its function. Sensors with a blind zone of only 20  mm and an extremely thin beam  spread are making entirely new applications possible today: Fill level measurement in wells of microtiter plates and test tubes, as well as the detection of small bottles in the packaging industry, can be implemented with ease. Even thin wires are reliably detected.
 
-![](images\Ultrasonic_Sensor_SS2018.004.png)
+![](images/Ultrasonic_Sensor_SS2018.004.png)
 
 Mechanical Experimental Setup:
 
