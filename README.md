@@ -27,13 +27,13 @@ Another advantage of this design is that we can study other sensors also by repl
 
 In the initial phase of the project we have designed a single axis linear motion guide with the idea of using lead screw as shown below. The detachable holder with the ultrasonic sensor and Arduino setup can be placed over the moving unit in the above shown setup.
 
-![](images\Ultrasonic_Sensor_SS2018.006.png)
+![](images/Ultrasonic_Sensor_SS2018.006.png)
 
 To have smooth movement such that the vibrations can be minimised and does not affect the study of sensor, the lead screw system was replaced with a pulley and belt system.
 
 In the below figure, it can be noticed that the centre body is elevated to 5mm with respect to the corner holding stands. This is to allow the centre body to move freely. The idea of this setup is to pull the centre body from one end to another end with the help of a belt and a pulley system. Belt is hinged to the centre body.
 
-![](images\Ultrasonic_Sensor_SS2018.008.png)
+![](images/Ultrasonic_Sensor_SS2018.008.png)
 
 The setup consists of three main mechanical parts.
 
@@ -43,47 +43,47 @@ These stands are on both the corners of the setup and are heavy to give enough s
 
 The pulley is mounted and free to rotate with the help of a ball bearing. The dimensions of these stands and bearings are provided in the design files that are attached in the appendix.
 
-![](images\Ultrasonic_Sensor_SS2018.009.png)
+![](images/Ultrasonic_Sensor_SS2018.009.png)
 
 2. Centre Holding body
 
 The centre body is to facilitate free movement for the sensor. This body lies on top of 4 linear guides. It has linear bearings to provide frictionless movement and is connected to the belt on both the ends which provide a pull force allowing for a movement in both the directions. The sensor along with Arduino and bread board for ultrasonic sensor are mounted on top of this setup. The entire metal frame holding the sensor and Arduino setup can be detached from the centre body by unbolting. It is feasible to use the sensor setup alone without the entire system. Just by unbolting two screws the sensor setup can be unmounted from the body.
 
-![](images\Ultrasonic_Sensor_SS2018.011.png)
+![](images/Ultrasonic_Sensor_SS2018.011.png)
 
 3. Belt and pulley system
 
 The belt is connected to both the ends of the centre of the body and the belt passes through the pulley and motor shaft thereby forming a closed-circuit system.  By pulling one of the ends of the body, it enables the body to travel in that direction. Nema 17 Stepper motor is used as it can provide a torque of 1.6 Kg / cm. The centre body weight around 700 grams and the torque provided by the motor is enough to move the body linearly.
 
-![](images\Ultrasonic_Sensor_SS2018.012.png)
+![](images/Ultrasonic_Sensor_SS2018.012.png)
 
 The system was designed in SolidWorks and realised in workshop. All the files for individual tiles and the detail list of parts are shared in appendix. 
 
 Solid Works Design:
 
-![](images\Ultrasonic_Sensor_SS2018.014.png)
+![](images/Ultrasonic_Sensor_SS2018.014.png)
 
 Realised Setup:
 
 Top View
 
-![](images\Ultrasonic_Sensor_SS2018.015.png)
+![](images/Ultrasonic_Sensor_SS2018.015.png)
 
 Side View
 
-![](images\Ultrasonic_Sensor_SS2018.016.png)
+![](images/Ultrasonic_Sensor_SS2018.016.png)
 
 Electronic Components:
 
 We have used MATLAB platform to run our setup. Hence the Arduino Uno is used as a passive board. The electrical setup is as shown below.
 
-![](images\Ultrasonic_Sensor_SS2018.018.png)
+![](images/Ultrasonic_Sensor_SS2018.018.png)
 
 The Electronic components used are: Ultrasonic sensor:
 
 Here, we are using the HC-SR04 ultrasonic sensor. The big advantage of this sensor its available easily and very cheap compared to other ultrasonic sensors.
 
-![](images\Ultrasonic_Sensor_SS2018.019.png)
+![](images/Ultrasonic_Sensor_SS2018.019.png)
 
 Specifications:
 
@@ -100,7 +100,7 @@ Specifications:
 |Weight approx |10 g |
 Ultrasonic sensor has a transmitter and a receiver in one module. The transmitter has a piezo which vibrates at a frequency of 45 kHz. The working principle of this module is as shown in figure 1. The ultrasonic sensor is trigger by making Trigger pin high for 10us. Then 8 pulses of 40kHz is send and the echo is received by the receiver part of sensor. 
 
-![](images\Ultrasonic_Sensor_SS2018.021.png)
+![](images/Ultrasonic_Sensor_SS2018.021.png)
 
 As discussed earlier, Ultrasonic sensor is used to detect the distance of an object. This is done by time of flight concept. Here we have a proportional relationship between time and distance.
 
@@ -110,7 +110,7 @@ We established a communication between Arduino Uno and MATLAB. We first need to 
 
 Arduino Uno is a microcontroller board based on the ATmega328P. It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analogue inputs, a 16 MHz quartz crystal, a USB connection, a power jack, an ICSP header and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with an AC-to-DC adapter or battery to get started.
 
-![](images\Ultrasonic_Sensor_SS2018.025.png)
+![](images/Ultrasonic_Sensor_SS2018.025.png)
 
 Specifications:
 
@@ -126,7 +126,7 @@ Adafruit Motor shield v2.3:
 
 The Motor shield is used as a driver for stepper motor. The stepper motor needs 0.33A of current to run at 12V DC. The Motor shield provides a 1.2A peak current per phase. We can connect 2 stepper motors with this shield at the same time. We have connected our Stepper motor at M1 and M2 as it’s a bipolar stepper motor.
 
-![](images\Ultrasonic_Sensor_SS2018.027.png)
+![](images/Ultrasonic_Sensor_SS2018.027.png)
 
 Specifications :
 
@@ -156,7 +156,7 @@ We have used a NEMA 17 stepper motor with 1.8-degree angle per step. The electri
 |Holding torque |0.23 Nm |
 The stepper motor has 2 coils and it’s a 4-wire motor. It is wired to Motor shield as shown below.
 
-![](images\Ultrasonic_Sensor_SS2018.029.png)
+![](images/Ultrasonic_Sensor_SS2018.029.png)
 
 Power Supply:
 
@@ -203,27 +203,27 @@ Note: In Matlab code, number of loops is 450 and the linear displacement given i
 
 Range of sensor:
 
-![](images\Ultrasonic_Sensor_SS2018.031.png)
+![](images/Ultrasonic_Sensor_SS2018.031.png)
 
 Measurements:
 
 1. Experiment with a metal stand (30 cm distance):
 
-![](images\Ultrasonic_Sensor_SS2018.033.png)
+![](images/Ultrasonic_Sensor_SS2018.033.png)
 
 Result:
 
-![](images\Ultrasonic_Sensor_SS2018.034.png)
+![](images/Ultrasonic_Sensor_SS2018.034.png)
 
 The above plot was mapped in Matlab and it can be seen the distance to be approximately 30 cm.
 
 2. Experiment with a wooden stand (70 cm distance):
 
-![](images\Ultrasonic_Sensor_SS2018.036.png)
+![](images/Ultrasonic_Sensor_SS2018.036.png)
 
 Results:
 
-![](images\Ultrasonic_Sensor_SS2018.037.png)
+![](images/Ultrasonic_Sensor_SS2018.037.png)
 
 It can be seen in the above figure that wood is placed exactly at 70 cm and the output graph is also nearby to 70 cm.
 
